@@ -95,21 +95,21 @@ const history = useHistory();
           <TableBody>
            { _DATA.currentData().length > 0  ? _DATA.currentData().map((items) =>
            <TableRow>
-               <TableCell>{items.id}</TableCell>
+               <TableCell style={{padding:'8px'}}>{items.id}</TableCell>
               <Tooltip title={items.title}>
-              <TableCell>{items.title.slice(0,20)}</TableCell></Tooltip> 
+              <TableCell style={{padding:'8px'}}>{items.title.slice(0,20)}</TableCell></Tooltip> 
               <Tooltip title={items.details}><TableCell>{items.details.slice(0,40)}</TableCell></Tooltip>
               
-              <TableCell>{items.event_date_utc}</TableCell>
-              <TableCell>{items.flight_number == 'null' ? '' :items.flight_number}</TableCell>
-<TableCell>
+              <TableCell style={{padding:'8px'}}>{items.event_date_utc}</TableCell>
+              <TableCell style={{padding:'8px'}}>{items.flight_number == 'null' ? '' :items.flight_number}</TableCell>
+<TableCell style={{padding:'8px'}}>
  <Tooltip title='Wikipedia'>
 <a href={items.links.wikipedia}> <RemoveRedEyeIcon  /></a>
  </Tooltip>
      
 
 </TableCell>
-<TableCell>
+<TableCell style={{padding:'8px'}}>
  <Tooltip title='Article'>
 <a href={items.links.article}> <DescriptionIcon  /></a>
  </Tooltip>
