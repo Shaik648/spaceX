@@ -97,7 +97,7 @@ const history = useHistory();
            <TableRow>
                <TableCell style={{padding:'8px'}}>{items.id}</TableCell>
               <Tooltip title={items.title}>
-              <TableCell style={{padding:'8px'}}>{items.title.slice(0,20)}</TableCell></Tooltip> 
+              <TableCell style={{padding:'8px'}}>{items.title}</TableCell></Tooltip> 
               <Tooltip title={items.details}><TableCell>{items.details.slice(0,40)}</TableCell></Tooltip>
               
               <TableCell style={{padding:'8px'}}>{items.event_date_utc}</TableCell>
@@ -116,7 +116,7 @@ const history = useHistory();
      
 
 </TableCell>
-           </TableRow> ) :''}
+           </TableRow> ) :'No Data'}
           </TableBody>
         </Table>
       </TableContainer>
